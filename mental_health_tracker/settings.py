@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tapyn7-fp3-8=g5+d(u*wbr=)pmsqe-%h_dy=b%80qxpbo)$w#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","gabriel-selwas-mentalhealthtracker2.pbp.cs.ui.ac.id"]
 
 
 # Application definition
