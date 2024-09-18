@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
-	{% if not mood_entries %}
+<h1>Mental Health Tracker</h1>
+
+<h5>NPM: </h5>
+<p>{{ npm }}<p>
+
+<h5>Name:</h5>
+<p>{{ name }}</p> 
+
+<h5>Class:</h5>
+<p>{{ class }}</p>
+
+{% if not mood_entries %}
 	<p>Belum ada data mood pada mental health tracker.</p>
 	{% else %}
 	<table>
@@ -29,15 +40,10 @@
 	<a href="{% url 'main:create_mood_entry' %}">
 	  <button>Add New Mood Entry</button>
 	</a>
-<h1>Mental Health Tracker</h1>
+	<a href="{% url 'main:logout' %}">
+		<button>Logout</button>
+	</a>
+<h5>Sesi terakhir login: {{ last_login }}</h5>
 
-<h5>NPM: </h5>
-<p>{{ npm }}<p>
-
-<h5>Name:</h5>
-<p>{{ name }}</p> 
-
-<h5>Class:</h5>
-<p>{{ class }}</p>
 {% endblock content %}
 
